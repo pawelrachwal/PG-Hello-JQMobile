@@ -13,11 +13,15 @@
 		<!-- My app main page -->
 		<div data-role="page" id="pageone">
 		  <div data-role="header">
-			<h1>GUI</h1>
+			<h1>Business Card</h1>
 		  </div>
 		  <div data-role="main" class="ui-content">
-			<p>The graphical user interface (GUI), is a type of user interface that allows users to interact with electronic devices through graphical icons and visual indicators such as secondary notation, instead of text-based user interfaces, typed command labels or text navigation. GUIs were introduced in reaction to the perceived steep learning curve of command-line interfaces (CLIs), which require commands to be typed on a computer keyboard.</p>
-			<a href="#details" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" onclick="deviceInfo()">Let me introduce myself!</a>
+			Paweł Rachwał<br>
+		pawel.rachwal.94@gmail.com<br>
+		https://github.com/pawelrachwal<br>
+		KrDUIS1012<br>
+		Informatyka Stosowana<br><br>
+			<a href="#details" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Iterests</a>
 		  </div>
 		  <div data-role="footer" data-position="fixed">
 			<h1>(c) Paweł Rachwał</h1>
@@ -25,13 +29,17 @@
 		</div> 
 		
 		<!-- Mobile device details page -->
-		<div data-role="page" id="details" data-dialog="true">
-			<div data-role="header" data-theme="a">
-				<h1>It's me</h1>
+		<div data-role="page" id="details">
+			<div data-role="header">
+				<a href="#pageone" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+				<h1>Iterests</h1>
 			</div>
 			<div role="main" class="ui-content">
-				<p id="deviceDetails">Place for device details ...</p>
+				<p id="deviceDetails">My interests 1<br>My interests 2<br>My interests 3</p>
 			</div>
+			<div data-role="footer" data-position="fixed">
+			<h1>(c) Paweł Rachwał</h1>
+		  </div> 
 		</div>		
 		
 	</body>
