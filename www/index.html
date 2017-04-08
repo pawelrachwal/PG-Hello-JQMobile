@@ -13,26 +13,28 @@
 		<!-- My app main page -->
 		<div data-role="page" id="pageone">
 		  <div data-role="header">
-			<h1>Hello World!</h1>
+			<h1>Tourist attractions</h1>
 		  </div>
 		  <div data-role="main" class="ui-content">
-			<p>Hi, I'm your mobile device</p>
-			<a href="#details" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" onclick="deviceInfo()">Let me introduce myself!</a>
+			<a href="#masuria" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Masuria</a><br>
+			<div data-role="popup" id="masuria">
+					<img class="popphoto" src="../assets/img/masuria.jpg" style="max-height:512px;" alt="Masuria">
+			</div>
+
+			<a href="#pomerania" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Pomerania</a><br>
+			<div data-role="popup" id="pomerania">
+					<img class="popphoto" src="../assets/img/pomerania.jpg" style="max-height:512px;" alt="Pomerania">
+			</div>
+
+			<a href="#tatra" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">The Tatra Mountain</a><br>
+			<div data-role="popup" id="tatra">
+					<img class="popphoto" src="../assets/img/tatra.jpg" style="max-height:512px;" alt="Tatra">
+			</div>
+
 		  </div>
 		  <div data-role="footer" data-position="fixed">
-			<h1>(c) John Brown</h1>
+			<h1>(c) Paweł Rachwał</h1>
 		  </div> 
-		</div> 
-		
-		<!-- Mobile device details page -->
-		<div data-role="page" id="details" data-dialog="true">
-			<div data-role="header" data-theme="a">
-				<h1>It's me</h1>
-			</div>
-			<div role="main" class="ui-content">
-				<p id="deviceDetails">Place for device details ...</p>
-			</div>
-		</div>		
-		
+		</div> 		
 	</body>
 </html>
