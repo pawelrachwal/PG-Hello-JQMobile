@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<script src="js/pgb.js"></script>
+		<script src="cordova.js"></script>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body onload="init()">
+		
+		<!-- My app main page -->
+		<div data-role="page" id="pageone">
+		  <div data-role="header">
+			<h1>Make a drink</h1>
+		  </div>
+		  <div data-role="main" class="ui-content">
+			
+			<a href="#MalibuPop" class="ui-btn ui-btn-inline">Malibu Pop</a><br>
+			<a href="#TheGame" class="ui-btn ui-btn-inline">The Game</a><br>
+			<a href="#SweetPatootie" class="ui-btn ui-btn-inline">Sweet Patootie</a>
+
+			
+
+		  </div>
+
+			<div data-role="panel" id="MalibuPop">
+  				<h2>Malibu Pop</h2>
+ 					<img src="./img/MalibuPop.jpg" style="max-width:200px;" alt="MalibuPop">
+					<h4>Składniki:</h4>
+					<p>
+					Malibu rum (30 ml)<br>
+					likier blue curacao (30 ml)<br>
+					sok ananasowy (około 3-5 ml)<br>
+					sok żurawinowy (około 3-5 ml)<br>
+					kostki lodu</p><br>
+
+					<h4>Sposób przygotowania:</h4>
+					<p>Malibu rum i likier blue curacao mieszamy razem ze sobą w shakerze. Do szklanki typu highball dodajemy kostki lodu. Przelewamy do niej zawartość shakera i dodajemy soki.</p>
+			</div>
+
+			<div data-role="panel" id="TheGame">
+  				<h2>The Game</h2>
+ 					<img src="./img/TheGame.jpg" style="max-width:200px;" alt="TheGame">
+					<h4>Składniki:</h4>
+					<p>biały rum (30 ml)<br>
+					likier triple sec (15 ml)<br>
+					sok żurawinowy (60 ml)<br>
+					kostki lodu</p><br>
+					
+					<h4>Sposób przygotowania:</h4>
+					<p>Szklankę typu highball wypełnij kostkami lodu i wlej do niej biały rum. Dodaj sok żurawinowy. Na koniec wlej likier triple sec i podaj.</p>
+			</div>
+
+			<div data-role="panel" id="SweetPatootie">
+  				<h2>Sweet Patootie</h2>
+ 					<img src="./img/SweetPatootie.jpg" style="max-width:200px;" alt="SweetPatootie">
+					<h4>Składniki:</h4>
+					<p>gin (45 ml)<br>
+					likier Cointreau (25 ml)<br>
+					sok pomarańczowy (25 ml)<br>
+					kostki lodu</p><br>
+
+					<h4>Sposób przygotowania:</h4>
+					<p>Do shakera wrzucamy kostki lodu i wlewamy wszystkie składniki. Dobrze wstrząsamy i przelewamy do kieliszka koktajlowego. Ozdabiamy kieliszek kawałkiem pomarańczy.</p>
+			</div>
+
+		  <div data-role="footer" data-position="fixed">
+			<h1>(c) Paweł Rachwał</h1>
+		  </div> 
+		</div> 		
+	</body>
+</html>
