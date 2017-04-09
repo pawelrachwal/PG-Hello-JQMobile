@@ -13,23 +13,33 @@
 		<!-- My app main page -->
 		<div data-role="page" id="pageone">
 		  <div data-role="header">
-			<h1>Tourist attractions</h1>
+			<h1>Order</h1>
 		  </div>
 		  <div data-role="main" class="ui-content">
-			<a href="#masuria" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Masuria</a><br>
-			<div data-role="popup" id="masuria">
-					<img class="popphoto" src="./img/masuria.jpg" style="max-height:512px;" alt="Masuria">
-			</div>
+			
+			<label for="text-basic">Customer name and surname:</label>
+			<input type="text" name="text-basic" id="text-basic" value="">
 
-			<a href="#pomerania" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Pomerania</a><br>
-			<div data-role="popup" id="pomerania">
-					<img class="popphoto" src="./img/pomerania.jpg" style="max-height:512px;" alt="Pomerania">
-			</div>
+			<label for="date">Date:</label>
+			<input type="date" name="date" id="date" value="">
 
-			<a href="#tatra" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">The Tatra Mountain</a><br>
-			<div data-role="popup" id="tatra">
-					<img class="popphoto" src="./img/tatra.jpg" style="max-height:512px;" alt="Tatra">
-			</div>
+			<label for="select-choice-a" class="select">Product:</label>
+			<select name="select-choice-a" id="select-choice-a" data-native-menu="false">
+    			<option>Select product</option>
+    			<option value="5">iPhone 5</option>
+    			<option value="5s">iPhone 5s</option>
+    			<option value="6">iPhone 6</option>
+    			<option value="6s">iPhone 6s</option>
+					<option value="7">iPhone 7</option>
+			</select>
+
+			<label for="number-pattern">Quantity:</label>
+			<input type="number" name="number" pattern="[0-9]*" id="number-pattern" value="">
+
+			<br><br>
+			<button class="ui-shadow ui-btn ui-corner-all">Approve</button>
+			<button class="ui-shadow ui-btn ui-corner-all ui-btn-b">Reject</button>
+
 
 		  </div>
 		  <div data-role="footer" data-position="fixed">
